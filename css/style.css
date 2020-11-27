@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1.5fr 5fr 2fr;
+    height: 200vh;
+    width: 100vw;
+
+    grid-template-areas: 
+    
+    'he he'
+    'na na'
+    'se as'
+    'fo fo'
+    ;
+}
+
+.header{
+    grid-area: he;
+    background-color: grey;
+}
+.nav{
+    grid-area: na;
+}
+#section{
+    grid-area: se;
+}
+.aside{
+    grid-area: as;
+}
+.footer{
+    grid-area: fo;
+    background-color: rgb(58, 58, 58);
+    color: whitesmoke;
+}
+.wrapper{
+    display: flex;
+}
